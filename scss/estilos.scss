@@ -94,6 +94,10 @@ img{
 		}
 	}
 }
+.card-deck{
+	margin-left: 0;
+	margin-right: 0;
+}
 
 /**About**/
 
@@ -182,11 +186,11 @@ img{
 		padding:10px;
 		margin-top:5px;
 		font-size:10px;
-		color:$colorNude;
-		resize: none;
+		color:$colorNude;	
 	} 
 	textarea {
     	height:150px;
+		resize: none;
 	}
 }
  

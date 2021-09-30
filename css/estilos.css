@@ -104,6 +104,11 @@ img {
   }
 }
 
+.card-deck {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 /**About**/
 #about {
   min-height: 700px;
@@ -211,11 +216,11 @@ img {
   margin-top: 5px;
   font-size: 10px;
   color: #F4F4F4;
-  resize: none;
 }
 
 #formulario textarea {
   height: 150px;
+  resize: none;
 }
 
 #submit {
