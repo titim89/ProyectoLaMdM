@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;600&display=swap");
 body {
   font-family: 'Dosis', sans-serif;
+  background-color: #c7c1b7;
 }
 
 img {
@@ -27,6 +28,10 @@ img {
 
 .bgNude {
   background-color: #c7c1b7;
+}
+
+.bgGray {
+  background-color: #ada9a1;
 }
 
 .textDark {
@@ -107,6 +112,10 @@ img {
 .card-deck {
   margin-left: 0;
   margin-right: 0;
+}
+
+.card-deck .card {
+  border: none;
 }
 
 /**About**/
