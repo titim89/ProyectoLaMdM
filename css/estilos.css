@@ -38,13 +38,18 @@ img {
   color: #373737;
 }
 
+.titulo {
+  font-size: 4em;
+  text-align: center;
+}
+
 /**Header**/
 .navbar-nav {
   font-size: 1.5em;
 }
 
 .navbar-nav li {
-  padding: 10px;
+  padding: 8px;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -192,7 +197,17 @@ img {
 }
 
 /**Testimonios**/
-@media (min-width: 992px) {
+.bannerTesti {
+  height: 20vh;
+  background-image: url(../media/banner7.jpg);
+}
+
+.texto {
+  font-size: 2em;
+  height: auto;
+}
+
+@media only screen and (min-width: 992px) {
   .carousel-item img {
     max-width: 600px;
     margin: auto;
