@@ -197,14 +197,27 @@ img {
 }
 
 /**Testimonios**/
-.bannerTesti {
-  height: 20vh;
+.testimonios {
   background-image: url(../media/banner7.jpg);
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .texto {
-  font-size: 2em;
+  font-size: 1,5em;
   height: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media only screen and (min-width: 992px) {
+  .texto {
+    font-size: 2em;
+    height: auto;
+    padding-left: 180px;
+    padding-right: 180px;
+  }
 }
 
 @media only screen and (min-width: 992px) {
