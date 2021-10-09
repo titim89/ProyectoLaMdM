@@ -11,54 +11,68 @@
 </head>
 <body>
 	<div class="container-fluid px-0">
-		<nav class="navbar navbar-expand-lg navbar-light">
-			<a class="navbar-brand" href="index.html">
-				<img src="media/logo3.png" alt="logo">
-			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse menu" id="navbarNav">
-				<ul class="navbar-nav menu navbar-nav ml-auto">
-				<li class="nav-item">
-					<a class="nav-link" href="index.html">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="about.html">Sobre mi</a>
-				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					  Asesorias
-					</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-					  <a class="dropdown-item" href="experiencias.html">Experiencias</a>
-					  <a class="dropdown-item" href="asesoria.html">Asesoria Integral</a>
-					  <a class="dropdown-item" href="curso.html">Curso autoconocimiento</a>
-					</div>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="testimonios.html">Testimonios</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="contacto.html">Contacto</a>
-				</li>
-				</ul>
+		<div class="bannerContacto">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<a class="navbar-brand" href="index.html">
+					<img src="media/logo3.png" alt="logo">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse menu" id="navbarNav">
+					<ul class="navbar-nav menu navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="about.html">Sobre mi</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Asesorias
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="experiencias.html">Experiencias</a>
+						<a class="dropdown-item" href="asesoria.html">Asesoria Integral</a>
+						<a class="dropdown-item" href="curso.html">Curso autoconocimiento</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="testimonios.html">Testimonios</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contacto.html">Contacto</a>
+					</li>
+					</ul>
+				</div>
+			</nav>
+			<div class="container-fluid d-flex justify-content-center">
+				<div class="w-50">
+					<form class="d-flex flex-column justify-content-center align-items-center py-5 rounded">
+						<div>
+							<svg xmlns="http://www.w3.org/2000/svg" width="220" height="220" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M5 18v3.766l1.515-.909L11.277 18H16c1.103 0 2-.897 2-2V8c0-1.103-.897-2-2-2H4c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2h1zM4 8h12v8h-5.277L7 18.234V16H4V8z"></path><path d="M20 2H8c-1.103 0-2 .897-2 2h12c1.103 0 2 .897 2 2v8c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2z"></path></svg>
+						</div>
+						<p class="style typeBold">Envianos un mensaje:</p>
+						<div class="form-group col-12">
+							<label for="nombre">Nombre</label>
+							<input type="text" class="form-control rounded-pill" id="nombre" placeholder="Nombre y Apellido">
+						</div>
+						<div class="form-group col-12">
+						<label for="email">Email</label>
+						<input type="email" class="form-control rounded-pill" id="email" placeholder="name@example.com">
+						</div>    
+						<div class="form-group col-12">
+						<label for="mensaje">Mensaje</label>
+						<textarea class="form-control" id="mensaje" rows="3"></textarea>
+						</div>
+						<!-- Button trigger modal -->
+						<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+							Enviar
+						</button>
+					</form>
+				</div>
 			</div>
-		</nav>		
-        <div id="formulario" class="d-flex flex-column justify-content-center align-items-center py-5 bgNude">
-			<p class="style typeBold">Contacto:</p>
-			<form method="GET" action="">
-			<label for="nombre">Nombre:</label>
- 			<input id="nombre" type="text" name="nombre" placeholder="Nombre y Apellido" required="" />
-			<label for="email">Email:</label>
-			<input id="email" type="email" name="email" placeholder="ejemplo@correo.com" required="" />
-			<label for="mensaje">Mensaje:</label>
-			<textarea id="mensaje" name="mensaje" placeholder="Mensaje" required=""></textarea>
-			<!-- Button trigger modal -->
-			<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
-				Enviar
-			</button>
-		</div>
+		</div>	
 		<footer class="bgDark text-center text-white">
 			<div class="container p-4 pb-0">
 			  <!-- Section: Social media -->
