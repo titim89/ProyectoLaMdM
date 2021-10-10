@@ -17,9 +17,8 @@ img {
 }
 
 .style {
-  font-size: 20px;
+  font-size: 30px;
   padding-bottom: 5px;
-  text-decoration: underline;
 }
 
 .bgDark {
@@ -38,13 +37,18 @@ img {
   color: #373737;
 }
 
+.titulo {
+  font-size: 4em;
+  text-align: center;
+}
+
 /**Header**/
 .navbar-nav {
   font-size: 1.5em;
 }
 
 .navbar-nav li {
-  padding: 10px;
+  padding: 8px;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -53,29 +57,31 @@ img {
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #F4F4F4;
+  color: gray;
 }
 
-.navbar-light .show .navbar-nav .nav-link {
-  color: #F4F4F4;
+.dropdown-menu.show {
+  background-color: #c7c1b7;
+  border: none;
+  color: #373737;
 }
 
 /**Home**/
 .home {
-  background-image: url(../media/banner6.jpg);
+  background-image: url(../media/bannerHome.jpg);
   background-size: cover;
   background-position: top;
   height: 100vh;
 }
 
-.home .banner {
-  height: 100vh;
+.home .animacion {
+  height: 70vh;
   padding-top: 70px;
 }
 
 @media only screen and (min-width: 992px) {
   .home {
-    background-image: url(../media/banner62x.jpg);
+    background-image: url(../media/bannerHome2x.jpg);
   }
 }
 
@@ -192,7 +198,31 @@ img {
 }
 
 /**Testimonios**/
-@media (min-width: 992px) {
+.testimonios {
+  background-image: url(../media/bannerTestimonios.jpg);
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media only screen and (min-width: 992px) {
+  .testimonios {
+    background-image: url(../media/bannerTestimonios2x.jpg);
+  }
+}
+
+.texto {
+  font-size: 1,5em;
+  opacity: 0.9;
+}
+
+@media only screen and (min-width: 992px) {
+  .texto {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (min-width: 992px) {
   .carousel-item img {
     max-width: 600px;
     margin: auto;
@@ -201,43 +231,26 @@ img {
 }
 
 /**Contacto**/
-#formulario {
-  color: #373737;
+.bannerContacto {
+  background-image: url(../media/bannercontacto.jpg);
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-#formulario form {
-  margin: 0 auto;
-  width: 400px;
+form {
+  background-color: white;
+  opacity: 0.9;
+  margin: 20px;
 }
 
-#formulario label {
-  display: block;
-  margin-top: 20px;
-  letter-spacing: 1px;
+form label {
+  font-size: 1.5em;
 }
 
-#formulario input, #formulario textarea {
-  width: 380px;
-  height: 27px;
-  background: #373737;
-  border: 2px solid #F4F4F4;
-  padding: 10px;
-  margin-top: 5px;
-  font-size: 10px;
-  color: #F4F4F4;
-}
-
-#formulario textarea {
-  height: 150px;
+form textarea {
   resize: none;
-}
-
-#submit {
-  width: 85px;
-  height: 35px;
-  border: none;
-  margin-top: 20px;
-  cursor: pointer;
+  height: 150px;
 }
 
 /**Footer**/
