@@ -125,22 +125,32 @@ img {
 }
 
 /**About**/
-#about {
+.about {
   min-height: 700px;
 }
 
-#about .title {
+.about .title {
   font-size: 50px;
 }
 
-#about .foto {
+.about .foto {
   background-image: url(../media/perfil_collar.jpg);
   background-size: cover;
   background-position: top;
   min-height: 500px;
 }
 
+.about .links {
+  font-size: 1.5em;
+  word-spacing: 2px;
+}
+
+.about .links a {
+  color: #373737;
+}
+
 /**Asesorias**/
+/**Experiencias**/
 .estilo {
   background-image: url(../media/estilo.jpg);
   background-size: cover;
@@ -192,6 +202,22 @@ img {
 
 .cap {
   background-image: url(../media/capacitacionc.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+}
+
+/**Asesoria integral**/
+.imagenAsesoria {
+  background-image: url(../media/armarioc.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+}
+
+/**Curso**/
+.imagenCurso {
+  background-image: url(../media/imagenCurso.jpg);
   background-size: cover;
   background-position: center;
   min-height: 400px;

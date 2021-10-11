@@ -91,7 +91,7 @@ img{
 }
 
 @media only screen and (min-width: 992px) {
-    .centrar{
+  	   .centrar{
 		padding-left: 180px;
 		padding-right: 180px;
 		.tituloGrande{
@@ -114,7 +114,7 @@ img{
 
 /**About**/
 
-#about{
+.about{
 	min-height: 700px;
 	.title{
 		font-size: 50px;
@@ -125,9 +125,18 @@ img{
 		background-position: top;
 		min-height: 500px;
 	}
+	.links{
+		font-size: 1.5em;
+		word-spacing: 2px;
+		a{
+		color: $colorDark;
+		}
+	}
 }
 
 /**Asesorias**/
+
+/**Experiencias**/
 
 @mixin box {
 	background-size: cover;
@@ -166,6 +175,22 @@ img{
 .cap{
 	background-image: url(../media/capacitacionc.jpg);
 	@include box; 
+}
+
+/**Asesoria integral**/
+
+.imagenAsesoria{
+	background-image: url(../media/armarioc.jpg);
+	background-position: center;
+	background-size: cover;
+	height: 500px;
+}
+
+/**Curso**/
+
+.imagenCurso{
+	background-image: url(../media/imagenCurso.jpg);
+	@include box;
 }
 
 /**Testimonios**/
