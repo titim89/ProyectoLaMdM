@@ -4,16 +4,16 @@ body {
   background-color: #DCD0C0;
 }
 
-img {
-  width: 150px;
-}
-
 .typeBold {
   font-weight: 600;
 }
 
 .typeLight {
   font-weight: 300;
+}
+
+.textDark {
+  color: #373737;
 }
 
 .style {
@@ -37,14 +37,16 @@ img {
   background-color: #F4F4F4;
 }
 
-.textDark {
-  color: #373737;
-}
-
 .titulo {
-  font-size: 4em;
+  font-size: 3em;
   text-align: center;
   color: #C0B283;
+}
+
+@media (min-width: 720px) {
+  .titulo {
+    font-size: 4em;
+  }
 }
 
 .textoMedio {
@@ -52,7 +54,36 @@ img {
   text-align: justify;
 }
 
-/**Header**/
+.tituloGrande {
+  font-size: 2em;
+}
+
+@media (min-width: 992px) {
+  .tituloGrande {
+    font-size: 3em;
+  }
+}
+
+.textoGeneral {
+  font-size: 1em;
+}
+
+@media (min-width: 992px) {
+  .textoGeneral {
+    font-size: 1.5em;
+  }
+}
+
+.opacity {
+  opacity: 0.9;
+}
+
+/**Navbar**/
+.logo {
+  width: 150px;
+  height: auto;
+}
+
 .navbar-nav {
   font-size: 1.5em;
 }
@@ -74,6 +105,7 @@ img {
   background-color: #DCD0C0;
   border: none;
   color: #373737;
+  font-size: 20px;
 }
 
 /**Home**/
@@ -88,39 +120,9 @@ img {
   padding-top: 70px;
 }
 
-@media only screen and (min-width: 992px) {
+@media (min-width: 992px) {
   .home {
     background-image: url(../media/bannerHome2x.jpg);
-  }
-}
-
-.centrar {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.centrar .tituloGrande {
-  text-align: center;
-  font-size: 2em;
-}
-
-.centrar .textoHome {
-  text-align: center;
-  font-size: 1em;
-}
-
-@media only screen and (min-width: 992px) {
-  .centrar {
-    padding-left: 180px;
-    padding-right: 180px;
-  }
-  .centrar .tituloGrande {
-    text-align: center;
-    font-size: 3em;
-  }
-  .centrar .textoHome {
-    text-align: center;
-    font-size: 1.5em;
   }
 }
 
@@ -131,30 +133,12 @@ img {
 
 .card-deck .card {
   border: none;
+  max-width: 600px;
 }
 
 /**About**/
 .about {
   min-height: 700px;
-  /**.contenedorIframe{
-		position: relative;
-		padding-bottom: 56.25%;
-		width: 100%;
-		overflow: hidden;
-		iframe{
-			position: absolute;
-			top: 0;
-			left: 0;
-			bottom: 0;
-			right: 0;
-			width: 100%;
-			height: 100%;
-		}
-	}**/
-}
-
-.about .title {
-  font-size: 50px;
 }
 
 .about .foto {
@@ -164,16 +148,6 @@ img {
   min-height: 500px;
 }
 
-.about .links {
-  font-size: 1.5em;
-  word-spacing: 2px;
-}
-
-.about .links a {
-  color: #373737;
-}
-
-/**Asesorias**/
 /**Experiencias**/
 .estilo {
   background-image: url(../media/estilo.jpg);
@@ -259,24 +233,13 @@ img {
   background-attachment: fixed;
 }
 
-@media only screen and (min-width: 992px) {
+@media (min-width: 992px) {
   .testimonios {
     background-image: url(../media/bannerTestimonios2x.jpg);
   }
 }
 
-.texto {
-  font-size: 1,5em;
-  opacity: 0.9;
-}
-
-@media only screen and (min-width: 992px) {
-  .texto {
-    font-size: 2em;
-  }
-}
-
-@media only screen and (min-width: 992px) {
+@media (min-width: 992px) {
   .carousel-item img {
     max-width: 600px;
     margin: auto;
@@ -293,8 +256,6 @@ img {
 }
 
 form {
-  background-color: white;
-  opacity: 0.9;
   margin: 20px;
 }
 
