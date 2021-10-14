@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;600&display=swap");
 body {
   font-family: 'Dosis', sans-serif;
-  background-color: #c7c1b7;
+  background-color: #DCD0C0;
 }
 
 img {
@@ -26,11 +26,15 @@ img {
 }
 
 .bgNude {
-  background-color: #c7c1b7;
+  background-color: #DCD0C0;
 }
 
-.bgGray {
-  background-color: #ada9a1;
+.bgGold {
+  background-color: #C0B283;
+}
+
+.bgPaper {
+  background-color: #F4F4F4;
 }
 
 .textDark {
@@ -40,6 +44,12 @@ img {
 .titulo {
   font-size: 4em;
   text-align: center;
+  color: #C0B283;
+}
+
+.textoMedio {
+  font-size: 1.5em;
+  text-align: justify;
 }
 
 /**Header**/
@@ -57,11 +67,11 @@ img {
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-  color: gray;
+  color: #C0B283;
 }
 
 .dropdown-menu.show {
-  background-color: #c7c1b7;
+  background-color: #DCD0C0;
   border: none;
   color: #373737;
 }
@@ -71,7 +81,6 @@ img {
   background-image: url(../media/bannerHome.jpg);
   background-size: cover;
   background-position: top;
-  height: 100vh;
 }
 
 .home .animacion {
@@ -127,6 +136,21 @@ img {
 /**About**/
 .about {
   min-height: 700px;
+  /**.contenedorIframe{
+		position: relative;
+		padding-bottom: 56.25%;
+		width: 100%;
+		overflow: hidden;
+		iframe{
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}**/
 }
 
 .about .title {
@@ -208,11 +232,15 @@ img {
 }
 
 /**Asesoria integral**/
-.imagenAsesoria {
-  background-image: url(../media/armarioc.jpg);
-  background-position: center;
-  background-size: cover;
+.contenedorAsesoria {
   height: 500px;
+  width: auto;
+  overflow: hidden;
+}
+
+.contenedorAsesoria img {
+  width: 100%;
+  height: auto;
 }
 
 /**Curso**/
@@ -283,7 +311,7 @@ form textarea {
 #footer {
   padding: 60px;
   font-size: 20px;
-  color: #F4F4F4;
+  color: #DCD0C0;
   border-top: 1px solid;
 }
 /*# sourceMappingURL=estilos.css.map */
