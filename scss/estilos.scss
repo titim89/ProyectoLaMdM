@@ -18,6 +18,7 @@ body{
 
 .style{
 	font-size: 30px;
+	text-align: center;
 	padding-bottom: 5px;
 }
 .bgDark{
@@ -41,13 +42,10 @@ body{
 		font-size: 4em;     
 	}	
 }
-.textoMedio{
-	font-size: 1.5em;
-	text-align: justify;
-}
 
 .tituloGrande{	
-	font-size: 2em; 
+	font-size: 2em;
+	text-align: center; 
 	@media (min-width: 992px) {	   	
 			font-size: 3em;     
 	}	
@@ -55,6 +53,7 @@ body{
 
 .textoGeneral{	
 	font-size: 1em;
+	text-align: center;
 	@media (min-width: 992px) {	   	
 		font-size: 1.5em;
 	}
@@ -90,6 +89,10 @@ body{
 	border: none;
 	color: $colorDark;
 	font-size: 20px;
+	.dropdown-item:hover{
+		background-color: transparent;
+		color: $colorGold;
+	}
 }
 /**Home**/
 
@@ -118,16 +121,70 @@ body{
 /**About**/
 
 .about{
-	min-height: 700px;
 	.foto{
-		background-image: url(../media/perfil_collar.jpg);
-		background-size: cover;
-		background-position: top;
-		min-height: 500px;
+		height: 500px;
+		width: auto;
+		overflow: hidden;	
+		img{
+			width: 100%;
+			height: auto;		
+		}
 	}
 }
 
 /**Experiencias**/
+
+
+.color{
+	height: 500px;
+	width: auto;
+	overflow: hidden;	
+	img{
+		width: 100%;
+		height: auto;		
+	}
+}
+
+.armario{
+	height: 500px;
+	width: auto;
+	overflow: hidden;	
+	img{
+		width: 100%;
+		height: auto;		
+	}
+}
+
+.rostro{
+	height: 500px;
+	width: auto;
+	overflow: hidden;	
+	img{
+		width: 100%;
+		height: auto;		
+	}
+}
+
+.estilo{
+	height: 500px;
+	width: auto;
+	overflow: hidden;	
+	img{
+		width: 100%;
+		height: auto;		
+	}
+}
+
+.cuerpo{
+	height: 500px;
+	width: auto;
+	overflow: hidden;	
+	img{
+		width: 100%;
+		height: auto;		
+	}
+}
+/**
 
 @mixin box {
 	background-size: cover;
@@ -140,7 +197,7 @@ body{
 	@include box;  
 }
 .cuerpo{
-	background-image: url(../media/cuerpoc.jpg);
+	background-image: url(../media/v-t-aYn9l4QQdZM-unsplash.jpg);
 	@include box; 
 }
 .color{
@@ -160,14 +217,14 @@ body{
 	@include box; 
 }
 .rostro{
-	background-image: url(../media/rostroc.jpg);
+	background-image: url(../media/korie-cull-fSlay1r8uJQ-unsplash.jpg);
 	@include box; 
 }
 .cap{
 	background-image: url(../media/capacitacionc.jpg);
 	@include box; 
 }
-
+**/
 /**Asesoria integral**/
 
 .contenedorAsesoria{
@@ -182,10 +239,18 @@ body{
 
 /**Curso**/
 
-.imagenCurso{
-	background-image: url(../media/imagenCurso.jpg);
-	@include box;
+.contenedorCurso{	
+	.contenedorCursoImagen{
+		height: 500px;
+		width: auto;
+		overflow: hidden;	
+		img{
+			width: 100%;
+			height: auto;		
+		}
+	}
 }
+
 
 /**Testimonios**/
 

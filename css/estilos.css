@@ -18,6 +18,7 @@ body {
 
 .style {
   font-size: 30px;
+  text-align: center;
   padding-bottom: 5px;
 }
 
@@ -49,13 +50,9 @@ body {
   }
 }
 
-.textoMedio {
-  font-size: 1.5em;
-  text-align: justify;
-}
-
 .tituloGrande {
   font-size: 2em;
+  text-align: center;
 }
 
 @media (min-width: 992px) {
@@ -66,6 +63,7 @@ body {
 
 .textoGeneral {
   font-size: 1em;
+  text-align: center;
 }
 
 @media (min-width: 992px) {
@@ -108,6 +106,11 @@ body {
   font-size: 20px;
 }
 
+.dropdown-menu.show .dropdown-item:hover {
+  background-color: transparent;
+  color: #C0B283;
+}
+
 /**Home**/
 .home {
   background-image: url(../media/bannerHome.jpg);
@@ -137,74 +140,114 @@ body {
 }
 
 /**About**/
-.about {
-  min-height: 700px;
+.about .foto {
+  height: 500px;
+  width: auto;
+  overflow: hidden;
 }
 
-.about .foto {
-  background-image: url(../media/perfil_collar.jpg);
-  background-size: cover;
-  background-position: top;
-  min-height: 500px;
+.about .foto img {
+  width: 100%;
+  height: auto;
 }
 
 /**Experiencias**/
-.estilo {
-  background-image: url(../media/estilo.jpg);
-  background-size: cover;
-  background-position: center;
-  min-height: 400px;
-}
-
-.cuerpo {
-  background-image: url(../media/cuerpoc.jpg);
-  background-size: cover;
-  background-position: center;
-  min-height: 400px;
-}
-
 .color {
-  background-image: url(../media/colorc.jpg);
-  background-size: cover;
-  background-position: center;
-  min-height: 400px;
+  height: 500px;
+  width: auto;
+  overflow: hidden;
 }
 
-.asesoria {
-  background-image: url(../media/asesoriac.jpg);
-  background-size: cover;
-  background-position: center;
-  min-height: 400px;
+.color img {
+  width: 100%;
+  height: auto;
 }
 
 .armario {
-  background-image: url(../media/armarioc.jpg);
-  background-size: cover;
-  background-position: center;
-  min-height: 400px;
+  height: 500px;
+  width: auto;
+  overflow: hidden;
 }
 
-.compras {
-  background-image: url(../media/comprasc.jpg);
-  background-size: cover;
-  background-position: center;
-  min-height: 400px;
+.armario img {
+  width: 100%;
+  height: auto;
 }
 
 .rostro {
-  background-image: url(../media/rostroc.jpg);
-  background-size: cover;
-  background-position: center;
-  min-height: 400px;
+  height: 500px;
+  width: auto;
+  overflow: hidden;
 }
 
-.cap {
-  background-image: url(../media/capacitacionc.jpg);
-  background-size: cover;
-  background-position: center;
-  min-height: 400px;
+.rostro img {
+  width: 100%;
+  height: auto;
 }
 
+.estilo {
+  height: 500px;
+  width: auto;
+  overflow: hidden;
+}
+
+.estilo img {
+  width: 100%;
+  height: auto;
+}
+
+.cuerpo {
+  height: 500px;
+  width: auto;
+  overflow: hidden;
+}
+
+.cuerpo img {
+  width: 100%;
+  height: auto;
+}
+
+/**
+
+@mixin box {
+	background-size: cover;
+	background-position: center;  
+	min-height: 400px;
+}
+
+.estilo{
+	background-image: url(../media/estilo.jpg);
+	@include box;  
+}
+.cuerpo{
+	background-image: url(../media/v-t-aYn9l4QQdZM-unsplash.jpg);
+	@include box; 
+}
+.color{
+	background-image: url(../media/colorc.jpg);
+	@include box; 
+}
+.asesoria{
+	background-image: url(../media/asesoriac.jpg);
+	@include box; 
+}
+.armario{
+	background-image: url(../media/armarioc.jpg);
+	@include box; 
+}
+.compras{
+	background-image: url(../media/comprasc.jpg);
+	@include box; 
+}
+.rostro{
+	background-image: url(../media/korie-cull-fSlay1r8uJQ-unsplash.jpg);
+	@include box; 
+}
+.cap{
+	background-image: url(../media/capacitacionc.jpg);
+	@include box; 
+}
+**/
 /**Asesoria integral**/
 .contenedorAsesoria {
   height: 500px;
@@ -218,11 +261,15 @@ body {
 }
 
 /**Curso**/
-.imagenCurso {
-  background-image: url(../media/imagenCurso.jpg);
-  background-size: cover;
-  background-position: center;
-  min-height: 400px;
+.contenedorCurso .contenedorCursoImagen {
+  height: 500px;
+  width: auto;
+  overflow: hidden;
+}
+
+.contenedorCurso .contenedorCursoImagen img {
+  width: 100%;
+  height: auto;
 }
 
 /**Testimonios**/
