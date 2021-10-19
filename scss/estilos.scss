@@ -63,6 +63,31 @@ body{
 	opacity: 0.9;	
 }
 
+.card-deck{
+	margin-left: 0;
+	margin-right: 0;
+	.card{
+		border: none;
+		max-width: 600px;
+		background-color: #C0B283;
+	}	
+}	
+
+@mixin background {
+	background-size: cover;
+	background-position: top;  
+}
+
+@mixin imagen {
+	height: 500px;
+	width: auto;
+	overflow: hidden;	
+	img{
+		width: 100%;
+		height: auto;
+	}	
+}
+
 /**Navbar**/
 
 .logo{
@@ -94,12 +119,12 @@ body{
 		color: $colorGold;
 	}
 }
+
 /**Home**/
 
 .home{
 	background-image: url(../media/bannerHome.jpg);
-	background-size: cover;
-    background-position: top;
+	@include background;
 	.animacion{
 		height: 70vh;
 		padding-top: 70px;
@@ -109,161 +134,38 @@ body{
 	}
 }
 
-.card-deck{
-	margin-left: 0;
-	margin-right: 0;
-	.card{
-		border: none;
-		max-width: 600px;
-	}	
-}	
 
 /**About**/
 
 .about{
 	.foto{
-		height: 500px;
-		width: auto;
-		overflow: hidden;	
-		img{
-			width: 100%;
-			height: auto;		
-		}
+		@include imagen;		
 	}
 }
 
-/**Experiencias**/
-
-
-
-/**
-.color{
-	height: 500px;
-	width: auto;
-	overflow: hidden;	
-	img{
-		width: 100%;
-		height: auto;		
-	}
-}
-
-.armario{
-	height: 500px;
-	width: auto;
-	overflow: hidden;	
-	img{
-		width: 100%;
-		height: auto;		
-	}
-}
-
-.rostro{
-	height: 500px;
-	width: auto;
-	overflow: hidden;	
-	img{
-		width: 100%;
-		height: auto;		
-	}
-}
-
-.estilo{
-	height: 500px;
-	width: auto;
-	overflow: hidden;	
-	img{
-		width: 100%;
-		height: auto;		
-	}
-}
-
-.cuerpo{
-	height: 500px;
-	width: auto;
-	overflow: hidden;	
-	img{
-		width: 100%;
-		height: auto;		
-	}
-}**/
-/**
-
-@mixin box {
-	background-size: cover;
-	background-position: center;  
-	min-height: 400px;
-}
-
-.estilo{
-	background-image: url(../media/estilo.jpg);
-	@include box;  
-}
-.cuerpo{
-	background-image: url(../media/v-t-aYn9l4QQdZM-unsplash.jpg);
-	@include box; 
-}
-.color{
-	background-image: url(../media/colorc.jpg);
-	@include box; 
-}
-.asesoria{
-	background-image: url(../media/asesoriac.jpg);
-	@include box; 
-}
-.armario{
-	background-image: url(../media/armarioc.jpg);
-	@include box; 
-}
-.compras{
-	background-image: url(../media/comprasc.jpg);
-	@include box; 
-}
-.rostro{
-	background-image: url(../media/korie-cull-fSlay1r8uJQ-unsplash.jpg);
-	@include box; 
-}
-.cap{
-	background-image: url(../media/capacitacionc.jpg);
-	@include box; 
-}
-**/
 /**Asesoria integral**/
 
 .contenedorAsesoria{
-	height: 500px;
-	width: auto;
-	overflow: hidden;	
-	img{
-		width: 100%;
-		height: auto;		
-	}
+	@include imagen;
 }
 
 /**Curso**/
 
 .contenedorCurso{	
 	.contenedorCursoImagen{
-		height: 500px;
-		width: auto;
-		overflow: hidden;	
-		img{
-			width: 100%;
-			height: auto;		
-		}
+		@include imagen;
 	}
 }
-
 
 /**Testimonios**/
 
 .testimonios{
 	background-image: url(../media/bannerTestimonios.jpg);
-	background-position: top;
-	background-size: cover;
+	@include background;
 	background-attachment: fixed;
 	@media (min-width: 992px) {
 		background-image: url(../media/bannerTestimonios2x.jpg);
-	
+		@include background;
 	}
 }
 
@@ -279,20 +181,20 @@ body{
 
 .bannerContacto{
 	background-image: url(../media/bannercontacto.jpg);
-	background-position: top;
-	background-size: cover;
+	@include background;
 	background-attachment: fixed;
-}
-
-form{
-	margin: 20px;
-	label{
-		font-size: 1.5em;
-	}
-	textarea{
-			resize: none;
-			height: 150px;
-	}	 
+	.contenedorFormulario {
+		form{
+			margin: 20px;
+			label{
+				font-size: 1.5em;
+			}
+			textarea{
+					resize: none;
+					height: 150px;
+			}	 
+		}
+	}	
 }
 
 /**Footer**/

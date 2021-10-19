@@ -76,6 +76,17 @@ body {
   opacity: 0.9;
 }
 
+.card-deck {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.card-deck .card {
+  border: none;
+  max-width: 600px;
+  background-color: #C0B283;
+}
+
 /**Navbar**/
 .logo {
   width: 150px;
@@ -129,16 +140,6 @@ body {
   }
 }
 
-.card-deck {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.card-deck .card {
-  border: none;
-  max-width: 600px;
-}
-
 /**About**/
 .about .foto {
   height: 500px;
@@ -151,103 +152,6 @@ body {
   height: auto;
 }
 
-/**Experiencias**/
-.color {
-  height: 500px;
-  width: auto;
-  overflow: hidden;
-}
-
-.color img {
-  width: 100%;
-  height: auto;
-}
-
-.armario {
-  height: 500px;
-  width: auto;
-  overflow: hidden;
-}
-
-.armario img {
-  width: 100%;
-  height: auto;
-}
-
-.rostro {
-  height: 500px;
-  width: auto;
-  overflow: hidden;
-}
-
-.rostro img {
-  width: 100%;
-  height: auto;
-}
-
-.estilo {
-  height: 500px;
-  width: auto;
-  overflow: hidden;
-}
-
-.estilo img {
-  width: 100%;
-  height: auto;
-}
-
-.cuerpo {
-  height: 500px;
-  width: auto;
-  overflow: hidden;
-}
-
-.cuerpo img {
-  width: 100%;
-  height: auto;
-}
-
-/**
-
-@mixin box {
-	background-size: cover;
-	background-position: center;  
-	min-height: 400px;
-}
-
-.estilo{
-	background-image: url(../media/estilo.jpg);
-	@include box;  
-}
-.cuerpo{
-	background-image: url(../media/v-t-aYn9l4QQdZM-unsplash.jpg);
-	@include box; 
-}
-.color{
-	background-image: url(../media/colorc.jpg);
-	@include box; 
-}
-.asesoria{
-	background-image: url(../media/asesoriac.jpg);
-	@include box; 
-}
-.armario{
-	background-image: url(../media/armarioc.jpg);
-	@include box; 
-}
-.compras{
-	background-image: url(../media/comprasc.jpg);
-	@include box; 
-}
-.rostro{
-	background-image: url(../media/korie-cull-fSlay1r8uJQ-unsplash.jpg);
-	@include box; 
-}
-.cap{
-	background-image: url(../media/capacitacionc.jpg);
-	@include box; 
-}
-**/
 /**Asesoria integral**/
 .contenedorAsesoria {
   height: 500px;
@@ -275,14 +179,16 @@ body {
 /**Testimonios**/
 .testimonios {
   background-image: url(../media/bannerTestimonios.jpg);
-  background-position: top;
   background-size: cover;
+  background-position: top;
   background-attachment: fixed;
 }
 
 @media (min-width: 992px) {
   .testimonios {
     background-image: url(../media/bannerTestimonios2x.jpg);
+    background-size: cover;
+    background-position: top;
   }
 }
 
@@ -297,20 +203,20 @@ body {
 /**Contacto**/
 .bannerContacto {
   background-image: url(../media/bannercontacto.jpg);
-  background-position: top;
   background-size: cover;
+  background-position: top;
   background-attachment: fixed;
 }
 
-form {
+.bannerContacto .contenedorFormulario form {
   margin: 20px;
 }
 
-form label {
+.bannerContacto .contenedorFormulario form label {
   font-size: 1.5em;
 }
 
-form textarea {
+.bannerContacto .contenedorFormulario form textarea {
   resize: none;
   height: 150px;
 }
