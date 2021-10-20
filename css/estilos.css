@@ -142,7 +142,7 @@ body {
 
 /**About**/
 .about .foto {
-  height: 500px;
+  max-height: 500px;
   width: auto;
   overflow: hidden;
 }
@@ -154,7 +154,7 @@ body {
 
 /**Asesoria integral**/
 .contenedorAsesoria {
-  height: 500px;
+  max-height: 500px;
   width: auto;
   overflow: hidden;
 }
@@ -166,7 +166,7 @@ body {
 
 /**Curso**/
 .contenedorCurso .contenedorCursoImagen {
-  height: 500px;
+  max-height: 500px;
   width: auto;
   overflow: hidden;
 }
@@ -206,6 +206,14 @@ body {
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
+}
+
+@media (min-width: 992px) {
+  .bannerContacto {
+    background-image: url(../media/bannercontacto2.jpg);
+    background-size: cover;
+    background-position: top;
+  }
 }
 
 .bannerContacto .contenedorFormulario form {
