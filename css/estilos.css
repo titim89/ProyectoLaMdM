@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;600&display=swap");
+/**Clases de uso general**/
 body {
   font-family: 'Dosis', sans-serif;
   background-color: #DCD0C0;
@@ -12,30 +13,10 @@ body {
   font-weight: 300;
 }
 
-.textDark {
-  color: #373737;
-}
-
 .style {
   font-size: 30px;
   text-align: center;
   padding-bottom: 5px;
-}
-
-.bgDark {
-  background-color: #373737;
-}
-
-.bgNude {
-  background-color: #DCD0C0;
-}
-
-.bgGold {
-  background-color: #C0B283;
-}
-
-.bgPaper {
-  background-color: #F4F4F4;
 }
 
 .titulo {
@@ -76,15 +57,16 @@ body {
   opacity: 0.9;
 }
 
-.card-deck {
-  margin-left: 0;
-  margin-right: 0;
+/**Mixin y extend**/
+.about .foto, .asesoria .contenedorAsesoria, .curso .contenedorCurso .contenedorCursoImagen {
+  max-height: 500px;
+  width: auto;
+  overflow: hidden;
 }
 
-.card-deck .card {
-  border: none;
-  max-width: 600px;
-  background-color: #C0B283;
+.about .foto img, .asesoria .contenedorAsesoria img, .curso .contenedorCurso .contenedorCursoImagen img {
+  width: 100%;
+  height: auto;
 }
 
 /**Navbar**/
@@ -110,6 +92,11 @@ body {
   color: #C0B283;
 }
 
+.navbar-toggler {
+  border: none;
+  font-size: 1.5rem;
+}
+
 .dropdown-menu.show {
   background-color: #DCD0C0;
   border: none;
@@ -123,57 +110,63 @@ body {
 }
 
 /**Home**/
-.home {
+.contenedorHome .home {
   background-image: url(../media/bannerHome.jpg);
   background-size: cover;
   background-position: top;
 }
 
-.home .animacion {
+.contenedorHome .home .animacion {
   height: 70vh;
   padding-top: 70px;
 }
 
 @media (min-width: 992px) {
-  .home {
+  .contenedorHome .home {
     background-image: url(../media/bannerHome2x.jpg);
   }
 }
 
+.contenedorHome .introAbout {
+  background-color: #C0B283;
+}
+
+.contenedorHome .card-deck {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.contenedorHome .card-deck .card {
+  border: none;
+  max-width: 600px;
+  background-color: #DCD0C0;
+}
+
 /**About**/
-.about .foto {
-  max-height: 500px;
-  width: auto;
-  overflow: hidden;
-}
-
-.about .foto img {
-  width: 100%;
-  height: auto;
-}
-
 /**Asesoria integral**/
-.contenedorAsesoria {
-  max-height: 500px;
-  width: auto;
-  overflow: hidden;
+.asesoria .introEncuentros {
+  background-color: #C0B283;
 }
 
-.contenedorAsesoria img {
-  width: 100%;
-  height: auto;
+.asesoria .encuentros {
+  background-color: #F4F4F4;
+}
+
+/**Experiencias**/
+.experiencias .card-deck {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.experiencias .card-deck .card {
+  border: none;
+  max-width: 600px;
+  background-color: #C0B283;
 }
 
 /**Curso**/
-.contenedorCurso .contenedorCursoImagen {
-  max-height: 500px;
-  width: auto;
-  overflow: hidden;
-}
-
-.contenedorCurso .contenedorCursoImagen img {
-  width: 100%;
-  height: auto;
+.curso .infoCurso {
+  background-color: #C0B283;
 }
 
 /**Testimonios**/
@@ -192,8 +185,16 @@ body {
   }
 }
 
+.testimonios nav {
+  background-color: #DCD0C0;
+}
+
+.testimonios .bannerTestimonios {
+  background-color: #DCD0C0;
+}
+
 @media (min-width: 992px) {
-  .carousel-item img {
+  .testimonios .carrusel .carousel-item img {
     max-width: 600px;
     margin: auto;
     padding: 20px;
@@ -218,6 +219,7 @@ body {
 
 .bannerContacto .contenedorFormulario form {
   margin: 20px;
+  background-color: #F4F4F4;
 }
 
 .bannerContacto .contenedorFormulario form label {
@@ -230,10 +232,8 @@ body {
 }
 
 /**Footer**/
-#footer {
-  padding: 60px;
-  font-size: 20px;
-  color: #DCD0C0;
-  border-top: 1px solid;
+footer {
+  color: #F4F4F4;
+  background-color: #373737;
 }
 /*# sourceMappingURL=estilos.css.map */

@@ -1,9 +1,11 @@
 @import "variables";
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;600&display=swap');
 
+/**Clases de uso general**/
+
 body{
 	font-family: 'Dosis', sans-serif;
-	background-color: #DCD0C0;
+	background-color: $bgNude;
 }
 
 .typeBold{
@@ -12,26 +14,11 @@ body{
 .typeLight{
 	font-weight: 300;
 }
-.textDark{
-    color: $colorDark;
-}
 
 .style{
 	font-size: 30px;
 	text-align: center;
 	padding-bottom: 5px;
-}
-.bgDark{
-	background-color: #373737;
-}
-.bgNude{
-	background-color: #DCD0C0;
-}
-.bgGold{
-	background-color: #C0B283;
-}
-.bgPaper{
-	background-color: #F4F4F4;
 }
 
 .titulo{
@@ -62,23 +49,14 @@ body{
 .opacity{
 	opacity: 0.9;	
 }
-
-.card-deck{
-	margin-left: 0;
-	margin-right: 0;
-	.card{
-		border: none;
-		max-width: 600px;
-		background-color: #C0B283;
-	}	
-}	
+/**Mixin y extend**/
 
 @mixin background {
 	background-size: cover;
 	background-position: top;  
 }
 
-@mixin imagen {
+%imagen {
 	max-height: 500px;
 	width: auto;
 	overflow: hidden;	
@@ -109,8 +87,13 @@ body{
 	}	
 }
 
+.navbar-toggler{
+	border: none;
+	font-size: 1.5rem;
+}
+
 .dropdown-menu.show{
-	background-color: #DCD0C0;
+	background-color: $bgNude;
 	border: none;
 	color: $colorDark;
 	font-size: 20px;
@@ -122,16 +105,30 @@ body{
 
 /**Home**/
 
-.home{
-	background-image: url(../media/bannerHome.jpg);
-	@include background;
-	.animacion{
-		height: 70vh;
-		padding-top: 70px;
+.contenedorHome{
+	.home{
+		background-image: url(../media/bannerHome.jpg);
+		@include background;
+		.animacion{
+			height: 70vh;
+			padding-top: 70px;
+		}
+		@media (min-width: 992px) {
+			background-image: url(../media/bannerHome2x.jpg);
+		}	
 	}
-	@media (min-width: 992px) {
-		background-image: url(../media/bannerHome2x.jpg);
+	.introAbout{
+		background-color: $bgGold;
 	}
+	.card-deck{
+		margin-left: 0;
+		margin-right: 0;
+		.card{
+			border: none;
+			max-width: 600px;
+			background-color: $bgNude;
+		}	
+	}	
 }
 
 
@@ -139,23 +136,49 @@ body{
 
 .about{
 	.foto{
-		@include imagen;		
+		@extend %imagen;		
 	}
 }
 
 /**Asesoria integral**/
+.asesoria{
+	.contenedorAsesoria{
+		@extend %imagen;
+	}
+	.introEncuentros{
+		background-color: $bgGold;
+	}
+	.encuentros{
+		background-color: $bgPaper;
+	}
+}
 
-.contenedorAsesoria{
-	@include imagen;
+/**Experiencias**/
+
+.experiencias{
+	.card-deck{
+		margin-left: 0;
+		margin-right: 0;
+		.card{
+			border: none;
+			max-width: 600px;
+			background-color: $bgGold;
+		}	
+	}	
 }
 
 /**Curso**/
-
-.contenedorCurso{	
-	.contenedorCursoImagen{
-		@include imagen;
+.curso{
+	.contenedorCurso{	
+		.contenedorCursoImagen{
+			@extend %imagen;
+		}	
+	}	
+	.infoCurso{
+		background-color: $bgGold;
 	}
 }
+
 
 /**Testimonios**/
 
@@ -167,15 +190,23 @@ body{
 		background-image: url(../media/bannerTestimonios2x.jpg);
 		@include background;
 	}
+	nav{
+		background-color: $bgNude;
+	}
+	.bannerTestimonios{
+		background-color: $bgNude;
+	}
+	.carrusel{
+		@media (min-width: 992px) {
+			.carousel-item img {
+			  max-width: 600px;
+			  margin: auto;
+			  padding: 20px;
+			}
+		}	
+	}
 }
 
-@media (min-width: 992px) {
-    .carousel-item img {
-      max-width: 600px;
-      margin: auto;
-      padding: 20px;
-    }
-}
 
 /**Contacto**/
 
@@ -190,6 +221,7 @@ body{
 	.contenedorFormulario {
 		form{
 			margin: 20px;
+			background-color: $bgPaper;
 			label{
 				font-size: 1.5em;
 			}
@@ -203,9 +235,7 @@ body{
 
 /**Footer**/
 
-#footer{
-  padding: 60px;
-  font-size: 20px;
-  color: $colorNude;
-  border-top: 1px solid;
+footer{
+  color: $colorPaper;
+  background-color: $bgDark;
 }
